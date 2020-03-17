@@ -1,7 +1,7 @@
 defmodule ISN.Mixfile do
   use Mix.Project
 
-  @version "2.0.1"
+  @version "3.0.0"
 
   def project do
     [
@@ -17,7 +17,7 @@ defmodule ISN.Mixfile do
       name: "ISN",
       docs: [
         source_ref: "v#{@version}",
-        source_url: "https://github.com/Frost/isn",
+        source_url: "https://github.com/nallwhy/isn",
         extras: ["README.md"]
       ]
     ]
@@ -39,9 +39,9 @@ defmodule ISN.Mixfile do
   defp package do
     [
       files: ~w(lib README.md mix.exs),
-      maintainers: ["Martin Frost"],
+      maintainers: ["Jinkyou Son"],
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/Frost/isn"}
+      links: %{"GitHub" => "https://github.com/nallwhy/isn"}
     ]
   end
 
