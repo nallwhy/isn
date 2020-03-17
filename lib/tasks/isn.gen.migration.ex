@@ -2,6 +2,7 @@ defmodule Mix.Tasks.Isn.Gen.Migration do
   use Mix.Task
   import Mix.Ecto
   import Mix.Generator
+  import Ecto.Migrator
 
   @migration_name "CreateISNExtension"
 

@@ -79,7 +79,7 @@ for module <- ~w(ISBN ISMN ISSN ISBN13 ISMN13 ISSN13 UPC EAN13) do
   ecto_type = module |> String.downcase() |> String.to_atom()
 
   defmodule module_name do
-    @behaviour Ecto.Type
+    use Ecto.Type
 
     @moduledoc """
     Definition for the ISN.#{module} module.
