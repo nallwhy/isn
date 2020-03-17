@@ -47,10 +47,11 @@ defmodule ISN.Mixfile do
 
   defp deps do
     [
-      {:postgrex, ">= 0.13.2"},
-      {:ecto, ">= 2.1.4"},
-      {:credo, "~> 0.7", only: :dev},
-      {:ex_doc, "~> 0.15", only: :dev}
+      {:postgrex, ">= 0.15.0"},
+      {:ecto_sql, ">= 3.0.0"},
+      {:jason, ">= 0.0.0", only: :test},
+      {:credo, "~> 1.3", only: :dev},
+      {:ex_doc, "~> 0.21", only: :dev}
     ]
   end
 end
